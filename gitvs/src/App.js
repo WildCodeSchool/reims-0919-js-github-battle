@@ -1,24 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import GetProfile from './components/GetProfile';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GetProfile name='Alox' 
+      avatar_url='https://avatars3.githubusercontent.com/u/8034782?s=460&v=4' 
+      public_repo='6' 
+      location='Reims'/>
     </div>
   );
 }
