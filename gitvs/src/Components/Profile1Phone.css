@@ -1,0 +1,44 @@
+.avatar {
+    width: 60%;
+    margin: 10px 0px 10px 0px;
+}
+
+.pseudo {
+    color: blue;
+    font-size: 1.5em;
+}
+
+.buttonPhone {
+    margin-top: 30px;
+    width: 70%;
+    height: 50px;
+}
+
+#Profile2 {
+    display : none;
+}
+
+#comparison {
+    display: none;
+}
+.avatar-result {
+    width: 80%;
+}
+
+figure {
+    margin: 0;
+}
+
+.VS-phone {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+#results-phone {
+    display: none;
+    background: red;
+    width: auto;
+    height: 200px;
+    margin: 10px;
+}
