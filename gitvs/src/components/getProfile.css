@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+@media screen and (max-width: 800px) {
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
 
 .card {
-    margin-left: 25%;
+    margin: auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
@@ -24,26 +30,48 @@
 }
 
 .avatar{
-    border-radius: 100%;
-    width: 65%;
-    height: 65%;
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
 }
 
 .githubNickname{
     padding-top: 10%;
-    font-family: 'Annie Use Your Telescope', cursive;
-    font-size: 5vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vh;
+    padding-bottom: 5%;
+}
+
+.userinfo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vh;
+    font-weight: bold;
+    padding: 5% 0%;
 }
 
 .location{
-    font-family: 'Annie Use Your Telescope', cursive;
-    font-size: 3vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vh;
     font-weight: bold;
+    padding: 5% 0%
 }
 
 .repo{
-    padding-bottom: 10%;
-    font-family: 'Annie Use Your Telescope', cursive;
-    font-size: 3vh;
-    font-weight: bold;
+    padding-top: 3%;
+}
+
+.logobox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 25%;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 15%;
+}
+.logo{
+    height: 60%;
+    width: 60%;
+}
 }

@@ -8,7 +8,8 @@ function App() {
       <GetProfile name='Alox' 
       avatar_url='https://avatars3.githubusercontent.com/u/8034782?s=460&v=4' 
       public_repo='6' 
-      location='Reims'/>
+      location='Reims'
+      weapons='JavaScript'/>
     </div>
   );
 }

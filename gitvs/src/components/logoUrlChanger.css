@@ -1,0 +1,21 @@
+@media screen and (max-width: 800px) {
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.logobox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 25%;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 15%;
+}
+.logo{
+    height: 60%;
+    width: 60%;
+}}
