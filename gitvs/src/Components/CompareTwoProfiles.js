@@ -8,9 +8,11 @@ function CompareTwoProfiles() {
     return (
         <div>
             <WelcomePage />
-            <Profile1 />
-            <Comparison />
-            <Profile2 />
+            <div id="displayResultsDesktop">
+                <Profile1 />
+                <Comparison />
+                <Profile2 />
+            </div>
         </div>
     )
 }

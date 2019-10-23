@@ -1,5 +1,6 @@
 import React from 'react';
 import './Profile1Phone.css';
+import './ProfilesDesktop.css';
 import ButtonMask from './ButtonMask';
 
 

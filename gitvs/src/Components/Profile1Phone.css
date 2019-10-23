@@ -1,61 +1,65 @@
-.avatar {
-    width: 60%;
-    margin: 10px 0px 10px 0px;
-}
+@media screen and (max-width: 800px) {
 
-.pseudo {
-    color: blue;
-    font-size: 1.5em;
-}
+    .avatar {
+        width: 60%;
+        margin: 10px 0px 10px 0px;
+    }
 
-.buttonPhone {
-    margin-top: 30px;
-    width: 70%;
-    height: 50px;
-}
+    .pseudo {
+        color: blue;
+        font-size: 1.5em;
+    }
 
-#WelcomePage {
-    margin-top: 50%;
-}
+    .buttonPhone {
+        margin-top: 30px;
+        width: 70%;
+        height: 50px;
+    }
 
-#Profile1 {
-    display: none;
-}
+    #WelcomePage {
+        margin-top: 50%;
+    }
 
-#Profile2 {
-    display : none;
-}
+    #Profile1 {
+        display: none;
+    }
 
-#comparison {
-    display: none;
-}
-.avatar-result {
-    width: 80%;
-}
+    #Profile2 {
+        display: none;
+    }
 
-figure {
-    margin: 0;
-}
+    #comparison {
+        display: none;
+    }
 
-.VS-phone {
-    display: flex;
-    align-items: center;
-    margin: 10px;
-}
+    .avatar-result {
+        width: 80%;
+    }
 
-#results-phone {
-    display: none;
-    background: red;
-    width: auto;
-    height: 200px;
-    margin: 10px;
-}
+    figure {
+        margin: 0;
+    }
 
-#CompareTwoProfile {
-    display: none;
-}
+    .VS-phone {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
 
-#bigScreen {
-    display: none;
-}
+    #results-phone {
+        display: none;
+        background: red;
+        width: auto;
+        height: 200px;
+        margin: 10px;
+    }
 
+    h1 {
+        color: red;
+    }
+
+    .buttonDesktop {
+        display: none;
+    }
+
+}

@@ -1,0 +1,56 @@
+@media screen and (min-width: 801px) {
+
+    #Profile1 {
+        display: none;
+    }
+    
+    #Profile2 {
+        display: none;
+    }
+    
+    #comparison {
+        display: none;
+        border:1px solid red;
+        margin: 10px;
+    }
+
+    .buttonPhone {
+        display: none;
+    }
+
+    h1 {
+        color: blue;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #displayResultsDesktop {
+        display: flex;
+        margin: 10px;
+    }
+
+    .VS-phone {
+        display: flex;
+        align-items: center;
+    }
+
+    .avatar {
+        width: 100%;
+    }
+
+    .avatar-result {
+        width: 100%;
+    }
+
+    #results-phone {
+        display: none;
+        background: red;
+        width: auto;
+        height: 200px;
+        margin: 10px;
+    }
+}
