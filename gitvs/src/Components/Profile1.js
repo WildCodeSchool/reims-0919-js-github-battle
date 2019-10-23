@@ -2,6 +2,7 @@ import React from 'react';
 import './Profile1Phone.css';
 import './ProfilesDesktop.css';
 import ButtonMask from './ButtonMask';
+import ButtonAppearProfile from './ButtonAppearProfile';
 
 
 const Profile1 = () => 
@@ -13,6 +14,7 @@ const Profile1 = () =>
                 <p>Public gist: 11</p>
                 <p>Location: Reims</p>
                 <button type="button" value="Mask" onClick={event => ButtonMask('Profile1', 'Profile2')} className="buttonPhone"> Ready </button>
+                <button className='buttonReadyDesktop' type="button" value="Mask" onClick={event => ButtonAppearProfile('Profile2')}>Ready</button>
             </div>
     </div>
 

@@ -32,6 +32,10 @@
         display: none;
     }
 
+    .buttonReadyDesktop {
+        display: none;
+    }
+    
     .avatar-result {
         width: 80%;
     }

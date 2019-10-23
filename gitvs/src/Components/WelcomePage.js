@@ -13,7 +13,7 @@ const WelcomePage = () =>
                 <div className='form'>
                     <input type="text" name="pseudo" id="pseudo" required />
                     <button type="button" value="Mask" onClick={event => ButtonMask('WelcomePage', 'Profile1')} className="buttonPhone"> Ready </button>
-                    <button type="button" value="Mask" onClick={event => ButtonMaskWelcomePageDesktop('WelcomePage', 'Profile1', 'comparison', 'Profile2')} className="buttonDesktop"> Ready </button>
+                    <button type="button" value="Mask" onClick={event => ButtonMask('WelcomePage', 'Profile1')} className="buttonDesktop"> Ready </button>
                 </div>
         </form>
     </div>

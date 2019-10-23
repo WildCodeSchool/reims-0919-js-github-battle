@@ -1,6 +1,7 @@
 import React from 'react';
 import './Profile1Phone.css';
 import ButtonAppearResults from './ButtonAppearResults';
+import ButtonAppearProfile from './ButtonAppearProfile';
 
 const Comparison = () => 
     <div id="comparison">
