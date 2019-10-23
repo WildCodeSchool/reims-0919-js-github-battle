@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) { */
 
 *{
     margin: 0%;
@@ -18,4 +18,4 @@
 .logo{
     height: 60%;
     width: 60%;
-}}
+}
