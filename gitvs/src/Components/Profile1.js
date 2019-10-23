@@ -11,7 +11,7 @@ const Profile1 = () =>
                 <p>Public repos: 9</p>
                 <p>Public gist: 11</p>
                 <p>Location: Reims</p>
-                <button type="button" value="Masquer" onClick={event => ButtonMask('Profile1', 'Profile2')} className="buttonPhone"> Ready </button>
+                <button type="button" value="Mask" onClick={event => ButtonMask('Profile1', 'Profile2')} className="buttonPhone"> Ready </button>
             </div>
     </div>
 

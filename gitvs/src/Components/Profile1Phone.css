@@ -14,6 +14,14 @@
     height: 50px;
 }
 
+#WelcomePage {
+    margin-top: 50%;
+}
+
+#Profile1 {
+    display: none;
+}
+
 #Profile2 {
     display : none;
 }
@@ -42,3 +50,12 @@ figure {
     height: 200px;
     margin: 10px;
 }
+
+#CompareTwoProfile {
+    display: none;
+}
+
+#bigScreen {
+    display: none;
+}
+
