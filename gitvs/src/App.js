@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable import/extensions */
+import React from 'react'
+import './App.css'
+import GetProfile from './components/GetProfile.jsx'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GetProfile
+        name="Alox"
+        avatarUrl="https://avatars3.githubusercontent.com/u/8034782?s=460&v=4"
+        publicRepo="6"
+        location="Reims"
+        weapons="JavaScript"
+      />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
