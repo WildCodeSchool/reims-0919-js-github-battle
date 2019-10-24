@@ -12,8 +12,8 @@
 
     .buttonPhone {
         margin-top: 30px;
-        width: 70%;
-        height: 50px;
+        width: 50%;
+        height: 30px;
     }
 
     #WelcomePage {
@@ -22,6 +22,11 @@
 
     #Profile1 {
         display: none;
+    }
+
+    #ChooseTheProfile2 {
+        display: none;
+        margin: 30% auto 0 auto;
     }
 
     #Profile2 {
@@ -35,7 +40,7 @@
     .buttonReadyDesktop {
         display: none;
     }
-    
+
     .avatar-result {
         width: 80%;
     }
