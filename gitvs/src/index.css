@@ -12,9 +12,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-#progressBar .MuiLinearProgress-barColorPrimary{
-  background-color: blue;
-}
-.MuiLinearProgress-colorPrimary{
-  background-color: red !important;
+.App{
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  padding: 20%;
 }

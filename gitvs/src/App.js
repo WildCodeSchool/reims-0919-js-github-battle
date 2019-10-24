@@ -1,12 +1,22 @@
 import React from 'react';
-import Result from './components/Result'
+import Commit from './components/Commit'
 import './App.css';
+import './progressBar.css'
+import Follower from './components/Follower'
+import ResultOfFight from './components/ResultOfFight'
+
 
 
 function App() {
   return (
     <div className="App">
-     <Result />
+        <div className='progressBarDiv' >
+          
+          <Commit />
+          <Follower />
+          <ResultOfFight />
+          
+        </div>
     </div>
   );
 }

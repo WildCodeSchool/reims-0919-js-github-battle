@@ -1,14 +1,22 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import LinearProgress from "@material-ui/core/LinearProgress";
-const commit1= 1200
-const commit2= 12
+import { yellow } from "@material-ui/core/colors";
 
-const commitotal= (commit1 + commit2)
-const commitPercent= (commit1/commitotal) * 100
+
+const follower1= 402
+const follower2= 345
+const followertotal= (follower1 + follower2)
+const followerPercent= (follower1/followertotal) * 100
+export const followerDecimal= Math.round(followerPercent*1)/1
+export const followerSecondUser=Math.round((100-followerPercent)*1)/1
+
+
+
 const useStyles = makeStyles({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
+    
   }
 });
 
@@ -23,11 +31,11 @@ const useStyles = makeStyles({
           return 100;
         }
         const diff = Math.random() * 10;
-        return Math.min(oldCompleted + diff, commitPercent);
+        return Math.min(oldCompleted + diff, followerDecimal);
       });
     }
 
-    const timer = setInterval(progress, 250);
+    const timer = setInterval(progress, 100);
     return () => {
       clearInterval(timer);
     };
@@ -35,12 +43,19 @@ const useStyles = makeStyles({
 
   return (
     <div className={classes.root}>
+      <div>
+        <div className='commitBar'>
+            <p className='firstUserResult'>{followerDecimal}%</p>
+            <p>/</p>
+            <p className='secondUserResult'>{followerSecondUser}%</p>
+        </div>
       <LinearProgress id='progressBar' variant="determinate" value={completed} />
+      </div>
       <br />
      
     
     </div>
   );
 }
-console.log(commitPercent + '%')
+console.log(followerPercent + '%')
 export default LinearDeterminate
