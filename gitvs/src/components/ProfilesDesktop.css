@@ -22,8 +22,9 @@
     
     #comparison {
         display: none;
-        border:1px solid red;
+        border:3px inset rgb(38, 28, 182);
         margin: 10px;
+        border-radius: 10px
     }
 
     .buttonPhone {
@@ -53,6 +54,8 @@
 
     .avatar-result {
         width: 50%;
+        border-radius: 50%;
+        margin: 10px;
     }
 
     #results-phone {

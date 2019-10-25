@@ -16,7 +16,7 @@ const Comparison = () => (
       <h2>VS</h2>
       <figure>
         <img className="avatar-result" src="https://avatars3.githubusercontent.com/u/54673312?v=4" alt="avatar user two" />
-        <h5>Maxime-Thibaud</h5>
+        <h5>Maxime</h5>
       </figure>
     </div>
     <div>

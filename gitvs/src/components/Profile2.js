@@ -13,7 +13,7 @@ const Profile2 = () => (
   <div id="Profile2">
     <GetProfile
           id="pepito"
-          name="Maxime-Thibaud"
+          name="Maxime"
           avatarUrl="https://avatars3.githubusercontent.com/u/54673312?v=4"
           publicRepo="4"
           location="Reims"

@@ -37,24 +37,30 @@
     border: 5px inset #1C6EA4;
 }
 
-.userinfo{
-    padding: 5%;
-    margin: auto;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3vh;
-}
+
 
 .location{
     padding-bottom: 5%;
 }
 
-
+@media screen and (min-width: 800px) and (max-width: 1150px) {
+    .userinfo {
+        font-size: 2.5 vh;
+    }
+}
 
 @media screen and (max-width: 800px) {
 *{
     margin: 0%;
     padding: 0%;
 
+}
+
+.userinfo{
+    padding: 5%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vh;
 }
 
 .card {
@@ -129,3 +135,5 @@
     width: 60%;
 }
 }
+
+
