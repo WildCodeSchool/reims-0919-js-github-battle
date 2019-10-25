@@ -1,5 +1,8 @@
 @media screen and (min-width: 801px) {
-
+    #WelcomePage {
+        margin: 20% auto 0 auto;
+    }
+    
     #Profile1 {
         display: none;
         margin: auto;
@@ -48,17 +51,13 @@
         align-items: center;
     }
 
-    .avatar {
-        width: 60%;
-    }
-
     .avatar-result {
-        width: 100%;
+        width: 50%;
     }
 
     #results-phone {
         display: none;
-        background: red;
+        background: black;
         width: auto;
         height: 200px;
         margin: 10px;
@@ -71,6 +70,14 @@
     }
 
     .buttonDesktop {
-        margin: 10px;
+        margin-top: 30px;
+        width: 10%;
+        height: 50px;
+    }
+
+    .buttonReadyDesktop {
+        margin-top: 30px;
+        width: 30%;
+        height: 50px;
     }
 }
