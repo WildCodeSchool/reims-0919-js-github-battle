@@ -6,6 +6,8 @@ import Follower from './components/Follower'
 import ResultOfFight from './components/ResultOfFight'
 
 
+/* eslint-disable import/extensions */
+import GetProfile from './components/GetProfile.jsx'
 
 function App() {
   return (
@@ -17,8 +19,15 @@ function App() {
           <ResultOfFight />
           
         </div>
+      <GetProfile
+        name="Alox"
+        avatarUrl="https://avatars3.githubusercontent.com/u/8034782?s=460&v=4"
+        publicRepo="6"
+        location="Reims"
+        weapons="JavaScript"
+      />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
