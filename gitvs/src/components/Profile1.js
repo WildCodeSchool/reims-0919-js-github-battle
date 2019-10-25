@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable arrow-parens */
+/* eslint-disable import/extensions */
 
 import React from 'react'
 import './Profile1Phone.css'
