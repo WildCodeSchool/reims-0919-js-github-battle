@@ -47,13 +47,16 @@
     .userinfo {
         font-size: 2.5 vh;
     }
+
+    .githubNickname{
+        font-size: 2.7 vh;
+    }
 }
 
 @media screen and (max-width: 800px) {
 *{
     margin: 0%;
     padding: 0%;
-
 }
 
 .userinfo{

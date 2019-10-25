@@ -4,11 +4,10 @@
 import React from 'react'
 import './Profile1Phone.css'
 import ButtonTheResultsAppears from './ButtonTheResultsAppears'
-import Commit from './components/Commit'
-import './App.css';
+import Commit from './Commit'
 import './progressBar.css'
-import Follower from './components/Follower'
-import ResultOfFight from './components/ResultOfFight'
+import Follower from './Follower'
+import ResultOfFight from './ResultOfFight'
 
 
 const Comparison = () => (
@@ -24,14 +23,14 @@ const Comparison = () => (
         <h5>Maxime</h5>
       </figure>
     </div>
-    <div>
-      <div className='progressBarDiv' >
-          <Commit />
-          <Follower />
-          <ResultOfFight />    
+    <div className="boxProgressBar">
+      <div className="progressBarDiv">
+        <Commit />
+        <Follower />
+        <ResultOfFight />
       </div>
     </div>
-    <button type="button" value="Masquer" onClick={event => ButtonTheResultsAppears('results-phone')}>Résults !</button>
+    <button type="button" value="Masquer">Résults !</button>
   </div>
 )
 

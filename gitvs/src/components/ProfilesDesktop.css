@@ -74,7 +74,7 @@
 
     .buttonDesktop {
         margin-top: 30px;
-        width: 10%;
+        width: 20%;
         height: 50px;
     }
 
@@ -82,5 +82,10 @@
         margin-top: 30px;
         width: 30%;
         height: 50px;
+    }
+
+    .boxProgressBar {
+        display: flex;
+        justify-content: center;
     }
 }

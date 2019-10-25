@@ -43,6 +43,8 @@
 
     .avatar-result {
         width: 80%;
+        border-radius: 50%;
+        margin: 10px;
     }
 
     figure {
@@ -69,6 +71,11 @@
 
     .buttonDesktop {
         display: none;
+    }
+
+    .boxProgressBar {
+        display: flex;
+        justify-content: center;
     }
 
 }
