@@ -2,6 +2,7 @@
 import React from 'react'
 import './getProfile.css'
 import WeaponLogo from './WeaponLogo'
+import { Link } from 'react-router-dom'
 
 function GetProfile({
   username, avatar_url, public_repos, location, weapons,
@@ -34,7 +35,7 @@ function GetProfile({
         <br />
         <WeaponLogo urlCheck={weapons} />
       </section>
-      <button>Go !</button>
+      <button type="button"><Link to="/chooseprofile2">Go !</Link></button>
     </div>
   )
 }

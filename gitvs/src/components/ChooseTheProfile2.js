@@ -9,7 +9,7 @@ import './Profile1Phone.css'
 import './ProfilesDesktop.css'
 
 const ChooseTheProfile2 = () => (
-  <div id="ChooseTheProfile2">
+  <div>
     <h3>Please enter an another username</h3>
     <form>
       <label htmlFor="pseudo" />
