@@ -12,7 +12,6 @@ function CompareTwoProfiles() {
       <WelcomePage />
       <ChooseTheProfile2 />
       <div id="displayResultsDesktop">
-        <Profile1 />
         <Comparison />
         <Profile2 />
       </div>

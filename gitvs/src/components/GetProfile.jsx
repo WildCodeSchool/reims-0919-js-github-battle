@@ -1,15 +1,16 @@
+/* eslint-disable camelcase */
 import React from 'react'
 import './getProfile.css'
 import WeaponLogo from './WeaponLogo'
 
 function GetProfile({
-  name, avatarUrl, publicRepo, location, weapons,
+  username, avatar_url, public_repos, location, weapons,
 }) {
   return (
     <div className="card">
-      <h1 className="githubNickname">{name}</h1>
+      <h1 className="githubNickname">{username}</h1>
       <div className="avatarBox">
-        <img className="avatar" src={avatarUrl} alt={name} />
+        <img className="avatar" src={avatar_url} alt={username} />
       </div>
       <section className="userinfo">
         <p className="location">
@@ -22,7 +23,7 @@ function GetProfile({
                     Public Repositories:
           {' '}
           <br />
-          {publicRepo}
+          {public_repos}
           <br />
         </p>
         <p className="weapons">
@@ -33,6 +34,7 @@ function GetProfile({
         <br />
         <WeaponLogo urlCheck={weapons} />
       </section>
+      <button>Go !</button>
     </div>
   )
 }

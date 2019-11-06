@@ -3,7 +3,13 @@
         margin: 20% auto 0 auto;
     }
     
-    #Profile1 {
+    #ProfileOn {
+        display: block;
+        margin: auto;
+        margin-top: 0;
+    }
+
+    #ProfileOff {
         display: none;
         margin: auto;
         margin-top: 0;
