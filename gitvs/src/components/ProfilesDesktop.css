@@ -1,0 +1,126 @@
+@media screen and (min-width: 801px) {
+
+    #chosenProfile1-comparison-chosenProfile2 {
+        display: flex;
+    }
+
+    #WelcomePage {
+        margin: 20% auto 0 auto;
+    }
+    
+    #PagePage {
+        display: flex;
+    }
+
+    #WelcomePageOn {
+        display: block;
+        margin: auto;
+        margin-top: 0;
+    }
+
+    #WelcomePageOff {
+        display: none;
+        margin: auto;
+        margin-top: 0;
+    }
+
+    #Page2ON {
+        display: block;
+    }
+
+    #Page2Off {
+        display: none;
+    }
+
+    #ProfileOn {
+        display: block;
+        margin: auto;
+        margin-top: 0;
+    }
+
+    #ProfileOff {
+        display: none;
+        margin: auto;
+        margin-top: 0;
+    }
+    
+    #ChooseTheProfile2 {
+        display: none;
+        margin: 20% auto 0 auto;
+    }
+
+    #Profile2 {
+        display: none;
+        margin: auto;
+        margin-top: 0;
+    }
+    
+    #comparison {
+        display: none;
+        border:3px inset rgb(38, 28, 182);
+        margin: 10px;
+        border-radius: 10px
+    }
+
+    .buttonPhone {
+        display: none;
+    }
+
+    h1 {
+        color: blue;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #displayResultsDesktop {
+        display: flex;
+        margin: 10px;
+        align-items: flex-start;
+    }
+
+    .VS-phone {
+        display: flex;
+        align-items: center;
+    }
+
+    .avatar-result {
+        width: 50%;
+        border-radius: 50%;
+        margin: 10px;
+    }
+
+    #results-phone {
+        display: none;
+        background: black;
+        width: auto;
+        height: 200px;
+        margin: 10px;
+    }
+
+    .buttonPhone {
+        margin-top: 30px;
+        width: 70%;
+        height: 50px;
+    }
+
+    .buttonDesktop {
+        margin-top: 30px;
+        width: 20%;
+        height: 50px;
+    }
+
+    .buttonReadyDesktop {
+        margin-top: 30px;
+        width: 30%;
+        height: 50px;
+    }
+
+    .boxProgressBar {
+        display: flex;
+        justify-content: center;
+    }
+}
