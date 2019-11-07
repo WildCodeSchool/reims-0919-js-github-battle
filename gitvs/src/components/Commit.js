@@ -3,8 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import LinearProgress from "@material-ui/core/LinearProgress";
 
 
-const commit1= 4340
-const commit2= 475
+const commit1= 434988
+const commit2= 4
 
 const commitotal= (commit1 + commit2)
 const commitPercent= (commit1/commitotal) * 100

@@ -15,7 +15,7 @@
 
   .progressBarDiv{
     display: flex;
-    width : 40%;
+    width : 100%;
     flex-direction: column;
       
   }

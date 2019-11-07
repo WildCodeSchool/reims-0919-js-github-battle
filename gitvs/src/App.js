@@ -12,13 +12,13 @@ import GetProfile from './components/GetProfile.jsx'
 function App() {
   return (
     <div className="App">
-        <div className='progressBarDiv' >
+        {/* <div className='progressBarDiv' >
           
           <Commit />
           <Follower />
-          <ResultOfFight />
+          <ResultOfFight /> */}
           
-        </div>
+        {/* </div> */}
       <GetProfile
         name="Alox"
         avatarUrl="https://avatars3.githubusercontent.com/u/8034782?s=460&v=4"
