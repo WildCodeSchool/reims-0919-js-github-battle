@@ -36,7 +36,6 @@
   "main": "index.js",
   "author": "",
   "license": "ISC",
-  "devDependencies": {
     "eslint-plugin-react-hooks": "^2.2.0",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
