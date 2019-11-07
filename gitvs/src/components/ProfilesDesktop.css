@@ -1,8 +1,37 @@
 @media screen and (min-width: 801px) {
+
+    #chosenProfile1-comparison-chosenProfile2 {
+        display: flex;
+    }
+
     #WelcomePage {
         margin: 20% auto 0 auto;
     }
     
+    #PagePage {
+        display: flex;
+    }
+
+    #WelcomePageOn {
+        display: block;
+        margin: auto;
+        margin-top: 0;
+    }
+
+    #WelcomePageOff {
+        display: none;
+        margin: auto;
+        margin-top: 0;
+    }
+
+    #Page2ON {
+        display: block;
+    }
+
+    #Page2Off {
+        display: none;
+    }
+
     #ProfileOn {
         display: block;
         margin: auto;
