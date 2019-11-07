@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable no-unused-vars */
 /* eslint-disable arrow-parens */
@@ -7,7 +8,6 @@ import React, { Component } from 'react'
 import './Profile1Phone.css'
 import './ProfilesDesktop.css'
 import GetProfile2 from './GetProfile2'
-import ButtonTheResultsAppears from './ButtonTheResultsAppears'
 
 class ChooseTheProfile2 extends Component {
   constructor() {
@@ -35,8 +35,9 @@ class ChooseTheProfile2 extends Component {
 
   async handleSubmit(e) {
     e.preventDefault()
-    const user = await this.getUser(this.refs.username.value);
-    this.setState({username: user.login,
+    const user = await this.getUser(this.refs.username.value)
+    this.setState({
+      username: user.login,
       avatar_url: user.avatar_url,
       location: user.location,
       public_repos: user.public_repos,
@@ -47,7 +48,8 @@ class ChooseTheProfile2 extends Component {
   async buttonSubmit(e) {
     e.preventDefault()
     const user = await this.getUser(this.refs.username.value)
-    this.setState({username: user.login,
+    this.setState({
+      username: user.login,
       avatar_url: user.avatar_url,
       location: user.location,
       public_repos: user.public_repos,

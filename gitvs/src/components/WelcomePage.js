@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable no-unused-vars */
 /* eslint-disable arrow-parens */
@@ -17,7 +18,6 @@ class WelcomePage extends Component {
       avatar_url: null,
       public_repos: null,
       isCardIsVisible: false,
-      isNewPageIsVisible: true,
     }
   }
 
@@ -32,11 +32,6 @@ class WelcomePage extends Component {
   cardAppear() {
     this.setState({ isCardIsVisible: true })
   }
-
-  pageAppear() {
-    this.setState({ isNewPageIsVisible: !this.state.isNewPageIsVisible })
-  }
-
 
   async handleSubmit(e) {
     e.preventDefault()
@@ -53,7 +48,7 @@ class WelcomePage extends Component {
   async buttonSubmit(e) {
     e.preventDefault()
     const user = await this.getUser(this.refs.username.value)
-    this.setState({ 
+    this.setState({
       username: user.login,
       avatar_url: user.avatar_url,
       location: user.location,

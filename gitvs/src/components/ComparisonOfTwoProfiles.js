@@ -1,3 +1,5 @@
+/* eslint-disable react/destructuring-assignment */
+
 import React from 'react'
 import Comparison from './Comparison'
 import DisplayChosenProfile1 from './DisplayChosenProfile1'
