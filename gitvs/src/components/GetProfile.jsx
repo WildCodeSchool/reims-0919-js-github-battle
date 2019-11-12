@@ -42,6 +42,7 @@ function GetProfile({
             avatar_url,
             username,
             location,
+            public_repos,
           },
         }}
         >

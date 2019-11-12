@@ -7,6 +7,7 @@ import './components/ProfilesDesktop.css'
 function App() {
   return (
     <div className="App">
+        
       <CompareTwoProfiles />
     </div>
   )

@@ -71,6 +71,7 @@ class ChooseTheProfile2 extends Component {
               firstAvatar_Url={this.props.location.state.avatar_url}
               firstUsername={this.props.location.state.username}
               firstUserLocation={this.props.location.state.location}
+              firstUserRepos={this.props.location.state.public_repos}
               username={this.state.username}
               avatar_url={this.state.avatar_url}
               public_repos={this.state.public_repos}

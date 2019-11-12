@@ -6,7 +6,7 @@ import WeaponLogo from './WeaponLogo'
 
 function GetProfile2({
   username, avatar_url, public_repos, location, weapons,
-  firstAvatar_Url, firstUsername, firstUserLocation,
+  firstAvatar_Url, firstUsername, firstUserLocation, firstUserRepos,
 }) {
   return (
     <div className="card">
@@ -43,9 +43,11 @@ function GetProfile2({
             firstAvatar_Url,
             firstUsername,
             firstUserLocation,
+            firstUserRepos,
             secondAvatar_Url: avatar_url,
             secondUsername: username,
             secondUserLocation: location,
+            secondUserRepos: public_repos,
           },
         }}
         >
