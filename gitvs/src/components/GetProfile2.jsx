@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 import './getProfile.css'
 import WeaponLogo from './WeaponLogo'
 
-function GetProfile({
+function GetProfile2({
   username, avatar_url, public_repos, location, weapons,
+  firstAvatar_Url, firstUsername, firstUserLocation, firstUserRepos,
 }) {
   return (
     <div className="card">
@@ -37,20 +38,24 @@ function GetProfile({
       </section>
       <button type="button">
         <Link to={{
-          pathname: '/chooseprofile2',
+          pathname: '/comparison',
           state: {
-            avatar_url,
-            username,
-            location,
-            public_repos,
+            firstAvatar_Url,
+            firstUsername,
+            firstUserLocation,
+            firstUserRepos,
+            secondAvatar_Url: avatar_url,
+            secondUsername: username,
+            secondUserLocation: location,
+            secondUserRepos: public_repos,
           },
         }}
         >
-          Go !
+         Go !
         </Link>
       </button>
     </div>
   )
 }
 
-export default GetProfile
+export default GetProfile2

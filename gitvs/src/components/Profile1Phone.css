@@ -1,0 +1,81 @@
+@media screen and (max-width: 800px) {
+
+    .avatar {
+        width: 60%;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .pseudo {
+        color: blue;
+        font-size: 1.5em;
+    }
+
+    .buttonPhone {
+        margin-top: 30px;
+        width: 50%;
+        height: 30px;
+    }
+
+    #WelcomePage {
+        margin-top: 50%;
+    }
+
+    #Profile1 {
+        display: none;
+    }
+
+    #ChooseTheProfile2 {
+        display: none;
+        margin: 30% auto 0 auto;
+    }
+
+    #Profile2 {
+        display: none;
+    }
+
+    #comparison {
+        display: none;
+    }
+
+    .buttonReadyDesktop {
+        display: none;
+    }
+
+    .avatar-result {
+        width: 80%;
+        border-radius: 50%;
+        margin: 10px;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    .VS-phone {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #results-phone {
+        display: none;
+        background: red;
+        width: auto;
+        height: 200px;
+        margin: 10px;
+    }
+
+    h1 {
+        color: red;
+    }
+
+    .buttonDesktop {
+        display: none;
+    }
+
+    .boxProgressBar {
+        display: flex;
+        justify-content: center;
+    }
+
+}
