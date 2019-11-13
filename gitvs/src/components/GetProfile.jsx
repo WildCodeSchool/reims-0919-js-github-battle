@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import './getProfile.css'
 import WeaponLogo from './WeaponLogo'
 
+
 function GetProfile({
   username, avatar_url, public_repos, location, userLanguage,
 }) {
@@ -33,7 +34,7 @@ function GetProfile({
           {userLanguage}
         </p>
         <br />
-        <WeaponLogo urlCheck={userLanguage} />
+        <WeaponLogo userLanguage={userLanguage} />
       </section>
       <button type="button">
         <Link to={{
@@ -42,6 +43,7 @@ function GetProfile({
             avatar_url,
             username,
             location,
+            userLanguage,
           },
         }}
         >

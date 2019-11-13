@@ -54,11 +54,13 @@ class WelcomePage extends Component {
   async buttonSubmit(e) {
     e.preventDefault()
     const user = await this.getUser(this.refs.username.value)
+    const preferLanguage = await this.getUserLanguage(this.refs.username.value)
     this.setState({
       username: user.login,
       avatar_url: user.avatar_url,
       location: user.location,
       public_repos: user.public_repos,
+      userLanguage: preferLanguage,
     })
     this.cardAppear()
   }
