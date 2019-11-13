@@ -44,6 +44,7 @@ function GetProfile({
             username,
             location,
             userLanguage,
+            public_repos,
           },
         }}
         >

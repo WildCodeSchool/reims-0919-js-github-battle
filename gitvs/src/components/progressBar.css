@@ -1,7 +1,7 @@
 #progressBar .MuiLinearProgress-barColorPrimary{
     
     background: linear-gradient(to right,#1759FF, #0B2C80);
-    width: 80% !important;
+    width: 100% !important;
     
   }
   .MuiLinearProgress-colorPrimary{
@@ -9,7 +9,7 @@
     padding : 5px;
     box-shadow: 5px 5px 5px black;
     border: 5px grey outset ;
-    width: 80%;
+    width: 100% !important;
   }
 .commitBarResult{
     padding: 15px;
@@ -17,7 +17,7 @@
 
   .progressBarDiv{
     display: flex;
-    width : 40%;
+    width : 100%;
     flex-direction: column;
       
   }
@@ -34,3 +34,5 @@
   .secondUserResult{
       color: red;
   }
+
+ 

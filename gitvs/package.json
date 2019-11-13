@@ -30,12 +30,11 @@
       "last 1 safari version"
     ]
   },
-
   "devDependencies": {
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "author": "",
-  "license": "ISC",
+    "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+    "main": "index.js",
+    "author": "",
+    "license": "ISC",
     "eslint-plugin-react-hooks": "^2.2.0",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-string-refs */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable jsx-a11y/control-has-associated-label */
@@ -27,9 +28,7 @@ class ChooseTheProfile2 extends Component {
   getUser(username) {
     return fetch(`https://api.github.com/users/${username}`)
       .then(response => response.json())
-      .then(response => {
-        return response;
-      })
+      .then(response => response)
   }
 
   getUserLanguage(username) {
@@ -77,7 +76,7 @@ class ChooseTheProfile2 extends Component {
         <div id="WelcomePage">
           <h1>Choose an another profile</h1>
           <form onSubmit={e => this.handleSubmit(e)}>
-            <input ref={"username"} type="text" placeholder="username" />
+            <input ref="username" type="text" placeholder="username" />
             <button type="button" onClick={e => this.buttonSubmit(e)}>Search</button>
           </form>
           <div id={this.state.isCardIsVisible ? 'ProfileOn' : 'ProfileOff'}>
@@ -86,6 +85,7 @@ class ChooseTheProfile2 extends Component {
               firstUsername={this.props.location.state.username}
               firstUserLocation={this.props.location.state.location}
               firstUserLanguage={this.props.location.state.userLanguage}
+              firstUserRepos={this.props.location.state.public_repos}
               username={this.state.username}
               avatar_url={this.state.avatar_url}
               public_repos={this.state.public_repos}

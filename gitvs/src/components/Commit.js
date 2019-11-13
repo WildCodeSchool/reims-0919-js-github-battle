@@ -1,15 +1,8 @@
+/* eslint-disable react/destructuring-assignment */
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import LinearProgress from '@material-ui/core/LinearProgress'
-
-
-const commit1 = 325
-const commit2 = 475
-
-const commitotal = (commit1 + commit2)
-const commitPercent = (commit1 / commitotal) * 100
-export const percentDecimal = Math.round(commitPercent * 1) / 1
-export const percentSecondUser = Math.round((100 - commitPercent) * 1) / 1
+import './progressBar.css'
 
 
 const useStyles = makeStyles({
@@ -18,7 +11,15 @@ const useStyles = makeStyles({
   },
 })
 
-function LinearDeterminate() {
+function LinearDeterminate(props) {
+  const commit1 = props.firstUserRepos
+  const commit2 = props.secondUserRepos
+  const commitotal = (commit1 + commit2)
+  const commitPercent = (commit1 / commitotal) * 100
+  const percentDecimal = Math.round(commitPercent * 1) / 1
+  const percentSecondUser = Math.round((100 - commitPercent) * 1) / 1
+
+
   const classes = useStyles()
   const [completed, setCompleted] = React.useState(0)
 
@@ -33,7 +34,7 @@ function LinearDeterminate() {
       })
     }
 
-    const timer = setInterval(progress, 1400)
+    const timer = setInterval(progress, 100)
     return () => {
       clearInterval(timer)
     }
@@ -53,7 +54,9 @@ function LinearDeterminate() {
 %
           </p>
         </div>
+
         <LinearProgress id="progressBar" variant="determinate" value={completed} />
+
       </div>
       <br />
 
