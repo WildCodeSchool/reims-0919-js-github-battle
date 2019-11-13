@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable no-unused-vars */
@@ -8,6 +9,7 @@ import React, { Component } from 'react'
 import './Profile1Phone.css'
 import './ProfilesDesktop.css'
 import GetProfile from './GetProfile'
+import filterLanguages from './filterLanguages'
 
 class WelcomePage extends Component {
   constructor() {
@@ -17,30 +19,34 @@ class WelcomePage extends Component {
       location: null,
       avatar_url: null,
       public_repos: null,
+      userLanguage: null,
       isCardIsVisible: false,
     }
   }
 
   getUser(username) {
     return fetch(`https://api.github.com/users/${username}`)
-    .then(response => response.json())
-    .then(response => {
-      return response;
-    })
+      .then(response => response.json())
+      .then(response => response)
   }
 
-  cardAppear() {
-    this.setState({ isCardIsVisible: true })
+  getUserLanguage(username) {
+    return fetch(`https://api.github.com/users/${username}/repos`)
+      .then(response => response.json())
+      .then(response => filterLanguages(response))
+      .then(response => response)
   }
 
   async handleSubmit(e) {
     e.preventDefault()
-    const user = await this.getUser(this.refs.username.value);
+    const user = await this.getUser(this.refs.username.value)
+    const preferLanguage = await this.getUserLanguage(this.refs.username.value)
     this.setState({
       username: user.login,
       avatar_url: user.avatar_url,
       location: user.location,
       public_repos: user.public_repos,
+      userLanguage: preferLanguage,
     })
     this.cardAppear()
   }
@@ -57,13 +63,17 @@ class WelcomePage extends Component {
     this.cardAppear()
   }
 
+  cardAppear() {
+    this.setState({ isCardIsVisible: true })
+  }
+
   render() {
     return (
       <div>
         <div id="WelcomePage">
           <h1>Welcome to Git Versus</h1>
           <form onSubmit={e => this.handleSubmit(e)}>
-            <input ref={"username"} type="text" placeholder="username" />
+            <input ref="username" type="text" placeholder="username" />
             <button type="button" onClick={e => this.buttonSubmit(e)}>Search</button>
           </form>
           <div id={this.state.isCardIsVisible ? 'ProfileOn' : 'ProfileOff'}>
@@ -72,7 +82,7 @@ class WelcomePage extends Component {
               avatar_url={this.state.avatar_url}
               public_repos={this.state.public_repos}
               location={this.state.location}
-              weapons="JavaScript"
+              userLanguage={this.state.userLanguage}
             />
           </div>
         </div>
