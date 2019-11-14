@@ -10,6 +10,9 @@ const useStyles = makeStyles({
 })
 
 function LinearDeterminate(props) {
+  const classes = useStyles()
+  const [completed, setCompleted] = React.useState(0)
+
   const publicGists1 = props.firstUserPublic_Gists
   const publicGists2 = props.secondUserPublic_Gists
   const publicGistsTotal = (publicGists1 + publicGists2)
@@ -17,9 +20,6 @@ function LinearDeterminate(props) {
   const publicGistsDecimal = Math.round(publicGistsPercent * 1) / 1
   const publicGistsSecondUser = Math.round((100 - publicGistsPercent) * 1) / 1
 
-
-  const classes = useStyles()
-  const [completed, setCompleted] = React.useState(0)
 
   React.useEffect(() => {
     function progress() {
