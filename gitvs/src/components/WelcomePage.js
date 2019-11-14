@@ -22,6 +22,7 @@ class WelcomePage extends Component {
       public_repos: null,
       userLanguage: null,
       followers: null,
+      public_gists: null,
       isCardIsVisible: false,
     }
   }
@@ -29,14 +30,12 @@ class WelcomePage extends Component {
   getUser(username) {
     return fetch(`https://api.github.com/users/${username}`)
       .then(response => response.json())
-      .then(response => response)
   }
 
   getUserLanguage(username) {
     return fetch(`https://api.github.com/users/${username}/repos`)
       .then(response => response.json())
       .then(response => filterLanguages(response))
-      .then(response => response)
   }
 
   async handleSubmit(e) {
@@ -49,6 +48,7 @@ class WelcomePage extends Component {
       location: user.location,
       public_repos: user.public_repos,
       followers: user.followers,
+      public_gists: user.public_gists,
       userLanguage: preferLanguage,
     })
     this.cardAppear()
@@ -64,6 +64,7 @@ class WelcomePage extends Component {
       location: user.location,
       public_repos: user.public_repos,
       followers: user.followers,
+      public_gists: user.public_gists,
       userLanguage: preferLanguage,
     })
     this.cardAppear()
@@ -89,6 +90,7 @@ class WelcomePage extends Component {
               public_repos={this.state.public_repos}
               location={this.state.location}
               followers={this.state.followers}
+              public_gists={this.state.public_gists}
               userLanguage={this.state.userLanguage}
             />
           </div>

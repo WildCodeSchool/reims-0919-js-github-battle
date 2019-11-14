@@ -8,7 +8,8 @@ import ButtonTheResultsAppears from './ButtonTheResultsAppears'
 import Commit from './Commit'
 import './progressBar.css'
 import Follower from './Follower'
-
+import PublicGists from './PublicGists'
+import ResultOfFight from './ResultOfFight'
 
 const Comparison = (props) => (
   <div id="comparison">
@@ -27,7 +28,22 @@ const Comparison = (props) => (
     <div className="boxProgressBar">
       <div>
         <Commit firstUserRepos={props.firstUserRepos} secondUserRepos={props.secondUserRepos} />
-        <Follower firstUserFollowers={props.firstUserFollowers} secondUserFollowers={props.secondUserFollowers} />
+        <Follower
+          firstUserFollowers={props.firstUserFollowers}
+          secondUserFollowers={props.secondUserFollowers}
+        />
+        <PublicGists
+          firstUserPublic_Gists={props.firstUserPublic_Gists}
+          secondUserPublic_Gists={props.secondUserPublic_Gists}
+        />
+        <ResultOfFight
+          firstUserRepos={props.firstUserRepos}
+          secondUserRepos={props.secondUserRepos}
+          firstUserFollowers={props.firstUserFollowers}
+          secondUserFollowers={props.secondUserFollowers}
+          firstUserPublic_Gists={props.firstUserPublic_Gists}
+          secondUserPublic_Gists={props.secondUserPublic_Gists}
+        />
       </div>
     </div>
     <button type="button" value="Masquer">Résults !</button>
