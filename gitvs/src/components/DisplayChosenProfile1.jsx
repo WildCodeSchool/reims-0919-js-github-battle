@@ -7,33 +7,35 @@ function DisplayChosenProfile1({
   firstUsername, firstAvatar_Url, public_repos, firstUserLocation, weapons,
 }) {
   return (
-    <div className="card">
+    <div className="card1">
+      
+      
+      <section className="userinfo1">
       <h1 className="githubNickname">{firstUsername}</h1>
-      <div className="avatarBox">
-        <img className="avatar" src={firstAvatar_Url} alt={firstUsername} />
-      </div>
-      <section className="userinfo">
-        <p className="location">
+        <h2 className="location">
                     Location:
           {' '}
           {firstUserLocation}
           <br />
-        </p>
-        <p className="repo">
+        </h2>
+        {/* <p className="repo">
                     Public Repositories:
           {' '}
           <br />
           {public_repos}
           <br />
-        </p>
-        <p className="weapons">
+        </p> */}
+        <h3 className="weapons">
                     Favorite Weapons:
           {' '}
           {weapons}
-        </p>
+        </h3>
         <br />
         <WeaponLogo urlCheck={weapons} />
       </section>
+      <div className="avatarBox">
+        <img className="avatar" src={firstAvatar_Url} alt={firstUsername} />
+      </div>
     </div>
   )
 }

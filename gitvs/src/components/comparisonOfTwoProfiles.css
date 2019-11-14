@@ -1,0 +1,25 @@
+#chosenProfile1-comparison-chosenProfile2{
+   display: flex;
+   flex-direction: column;
+   /* background: linear-gradient(0.25turn,#0B2C80, #ebf8e1, #E60B33); */
+   width: 100%;
+   align-items: center;
+   
+}
+.cardsOfUser{
+   display: flex;
+   flex-direction: row;
+   width: 100%;;
+   position: relative;
+}
+.versus{
+   position: absolute;
+   width: 10%;
+   height: auto;
+  
+}
+.twoCardsWithVersus{
+   display: flex;
+   justify-content: center;
+   
+}

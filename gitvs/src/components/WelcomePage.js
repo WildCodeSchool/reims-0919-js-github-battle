@@ -61,7 +61,9 @@ class WelcomePage extends Component {
     return (
       <div>
         <div id="WelcomePage">
-          <h1>Welcome to Git Versus</h1>
+          <div className="title">
+            <h1>Welcome to Git Versus </h1>
+          </div>
           <form onSubmit={e => this.handleSubmit(e)}>
             <input ref={"username"} type="text" placeholder="username" />
             <button type="button" onClick={e => this.buttonSubmit(e)}>Search</button>

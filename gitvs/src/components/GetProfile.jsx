@@ -8,8 +8,8 @@ function GetProfile({
   username, avatar_url, public_repos, location, weapons,
 }) {
   return (
-    <div className="card">
-      <h1 className="githubNickname">{username}</h1>
+    <div className="choiceCard1">
+      <h1 className="githubNickname1">{username}</h1>
       <div className="avatarBox">
         <img className="avatar" src={avatar_url} alt={username} />
       </div>
@@ -46,7 +46,7 @@ function GetProfile({
           },
         }}
         >
-          Go !
+          Lock profile !
         </Link>
       </button>
     </div>

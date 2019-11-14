@@ -42,7 +42,7 @@ function LinearDeterminate(props) {
       })
     }
 
-    const timer = setInterval(progress, 100)
+    const timer = setInterval(progress, 200)
     return () => {
       clearInterval(timer)
     }
@@ -50,24 +50,16 @@ function LinearDeterminate(props) {
 
   return (
     <div className={classes.root}>
-      <div>
-        <div className="commitBar">
-          <p className="firstUserResult">
-            {percentDecimal}
-%
-          </p>
-          <p>/</p>
-          <p className="secondUserResult">
-            {percentSecondUser}
-%
-          </p>
-        </div>
-          
-            <LinearProgress id="progressBar" variant="determinate" value={completed} />
-          
+      <div className='percentWithBar'>
+        <p className="firstUserResult">
+          {percentDecimal}%
+        </p>
+        <LinearProgress id="progressBar" variant="determinate" value={completed} />
+        <p className="secondUserResult">
+          {percentSecondUser}%
+        </p>
+        <br />
       </div>
-      <br />
-
 
     </div>
   )

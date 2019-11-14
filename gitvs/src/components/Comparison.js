@@ -12,24 +12,28 @@ import Follower from './Follower'
 
 const Comparison = (props) => (
   <div id="comparison">
+    <h1>Results</h1>
     <div className="VS-phone">
-      <figure>
+      {/* <figure>
        
         <img className="avatar-result" src={props.firstAvatar_Url} alt="avatar user one" />
         
-      </figure>
-      <h2>VS</h2>
+      </figure> */}
+      {/* <h2>VS</h2>
       <figure>
         <img className="avatar-result" src={props.secondAvatar_Url} alt="avatar user two" />
         
-      </figure>
-    </div>
-    <div className="boxProgressBar">
-      <div>
+      </figure> */}
+      <p></p>
+    
+      <div className="boxProgressBar">
+        
         <Commit  firstUserRepos={props.firstUserRepos} secondUserRepos={props.secondUserRepos} />
-      </div>
+      </div> 
+      
+      
     </div>
-    <button type="button" value="Masquer">Résults !</button>
+    
   </div>
 )
 

@@ -9,8 +9,8 @@ function GetProfile2({
   firstAvatar_Url, firstUsername, firstUserLocation, firstUserRepos,
 }) {
   return (
-    <div className="card">
-      <h1 className="githubNickname">{username}</h1>
+    <div className="choiceCard2">
+      <h1 className="githubNickname2">{username}</h1>
       <div className="avatarBox">
         <img className="avatar" src={avatar_url} alt={username} />
       </div>
@@ -51,7 +51,7 @@ function GetProfile2({
           },
         }}
         >
-         Go !
+         Lock profile !
         </Link>
       </button>
     </div>
