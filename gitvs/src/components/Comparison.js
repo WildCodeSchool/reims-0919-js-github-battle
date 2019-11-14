@@ -27,6 +27,7 @@ const Comparison = (props) => (
     <div className="boxProgressBar">
       <div>
         <Commit firstUserRepos={props.firstUserRepos} secondUserRepos={props.secondUserRepos} />
+        <Follower firstUserFollowers={props.firstUserFollowers} secondUserFollowers={props.secondUserFollowers} />
       </div>
     </div>
     <button type="button" value="Masquer">Résults !</button>

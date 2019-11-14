@@ -20,6 +20,8 @@ function ComparisonOfTwoProfiles(props) {
           secondAvatar_Url={props.location.state.secondAvatar_Url}
           firstUserRepos={props.location.state.firstUserRepos}
           secondUserRepos={props.location.state.secondUserRepos}
+          firstUserFollowers={props.location.state.firstUserFollowers}
+          secondUserFollowers={props.location.state.secondUserFollowers}
         />
         <DisplayChosenProfile2
           secondAvatar_Url={props.location.state.secondAvatar_Url}

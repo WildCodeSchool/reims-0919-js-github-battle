@@ -1,24 +1,23 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import LinearProgress from '@material-ui/core/LinearProgress'
-
-
-const follower1 = 5026
-const follower2 = 349
-const followertotal = (follower1 + follower2)
-const followerPercent = (follower1 / followertotal) * 100
-export const followerDecimal = Math.round(followerPercent * 1) / 1
-export const followerSecondUser = Math.round((100 - followerPercent) * 1) / 1
-
+import './progressBar.css'
 
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
-
   },
 })
 
-function LinearDeterminate() {
+function LinearDeterminate(props) {
+  const follower1 = props.firstUserFollowers
+  const follower2 = props.secondUserFollowers
+  const followertotal = (follower1 + follower2)
+  const followerPercent = (follower1 / followertotal) * 100
+  const followerDecimal = Math.round(followerPercent * 1) / 1
+  const followerSecondUser = Math.round((100 - followerPercent) * 1) / 1
+
+
   const classes = useStyles()
   const [completed, setCompleted] = React.useState(0)
 
@@ -33,7 +32,7 @@ function LinearDeterminate() {
       })
     }
 
-    const timer = setInterval(progress, 1400)
+    const timer = setInterval(progress, 100)
     return () => {
       clearInterval(timer)
     }

@@ -20,6 +20,7 @@ class ChooseTheProfile2 extends Component {
       location: null,
       avatar_url: null,
       public_repos: null,
+      followers: null,
       userLanguage: null,
       isCardIsVisible: false,
     }
@@ -51,6 +52,7 @@ class ChooseTheProfile2 extends Component {
       avatar_url: user.avatar_url,
       location: user.location,
       public_repos: user.public_repos,
+      followers: user.followers,
       userLanguage: preferLanguage,
     })
     this.cardAppear()
@@ -65,6 +67,7 @@ class ChooseTheProfile2 extends Component {
       avatar_url: user.avatar_url,
       location: user.location,
       public_repos: user.public_repos,
+      followers: user.followers,
       userLanguage: preferLanguage,
     })
     this.cardAppear()
@@ -86,10 +89,12 @@ class ChooseTheProfile2 extends Component {
               firstUserLocation={this.props.location.state.location}
               firstUserLanguage={this.props.location.state.userLanguage}
               firstUserRepos={this.props.location.state.public_repos}
+              firstUserFollowers={this.props.location.state.followers}
               username={this.state.username}
               avatar_url={this.state.avatar_url}
               public_repos={this.state.public_repos}
               location={this.state.location}
+              followers={this.state.followers}
               userLanguage={this.state.userLanguage}
             />
           </div>

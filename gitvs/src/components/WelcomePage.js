@@ -21,6 +21,7 @@ class WelcomePage extends Component {
       avatar_url: null,
       public_repos: null,
       userLanguage: null,
+      followers: null,
       isCardIsVisible: false,
     }
   }
@@ -47,6 +48,7 @@ class WelcomePage extends Component {
       avatar_url: user.avatar_url,
       location: user.location,
       public_repos: user.public_repos,
+      followers: user.followers,
       userLanguage: preferLanguage,
     })
     this.cardAppear()
@@ -61,6 +63,7 @@ class WelcomePage extends Component {
       avatar_url: user.avatar_url,
       location: user.location,
       public_repos: user.public_repos,
+      followers: user.followers,
       userLanguage: preferLanguage,
     })
     this.cardAppear()
@@ -85,6 +88,7 @@ class WelcomePage extends Component {
               avatar_url={this.state.avatar_url}
               public_repos={this.state.public_repos}
               location={this.state.location}
+              followers={this.state.followers}
               userLanguage={this.state.userLanguage}
             />
           </div>
