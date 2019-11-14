@@ -3,13 +3,12 @@ import { makeStyles } from '@material-ui/core/styles'
 import LinearProgress from '@material-ui/core/LinearProgress'
 
 
-const follower1= 5026
-const follower2= 349
-const followertotal= (follower1 + follower2)
-const followerPercent= (follower1/followertotal) * 100
-export const followerDecimal= Math.round(followerPercent*1)/1
-export const followerSecondUser=Math.round((100-followerPercent)*1)/1
-
+const follower1 = 5026
+const follower2 = 349
+const followertotal = (follower1 + follower2)
+const followerPercent = (follower1 / followertotal) * 100
+export const followerDecimal = Math.round(followerPercent * 1) / 1
+export const followerSecondUser = Math.round((100 - followerPercent) * 1) / 1
 
 
 const useStyles = makeStyles({

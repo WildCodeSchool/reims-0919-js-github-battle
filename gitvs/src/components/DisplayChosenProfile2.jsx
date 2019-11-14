@@ -4,7 +4,7 @@ import './getProfile.css'
 import WeaponLogo from './WeaponLogo'
 
 function DisplayChosenProfile2({
-  secondUsername, secondAvatar_Url, public_repos, secondUserLocation, weapons,
+  secondUsername, secondAvatar_Url, public_repos, secondUserLocation, secondUserLanguage,
 }) {
   return (
     <div className="card2">
@@ -31,10 +31,10 @@ function DisplayChosenProfile2({
         <p className="weapons">
                     Favorite Weapons:
           {' '}
-          {weapons}
+          {secondUserLanguage}
         </p>
         <br />
-        <WeaponLogo urlCheck={weapons} />
+        <WeaponLogo userLanguage={secondUserLanguage} />
       </section>
     </div>
   )

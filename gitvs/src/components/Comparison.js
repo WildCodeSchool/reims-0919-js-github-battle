@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable no-unused-vars */
 /* eslint-disable arrow-parens */
 
@@ -7,7 +8,6 @@ import ButtonTheResultsAppears from './ButtonTheResultsAppears'
 import Commit from './Commit'
 import './progressBar.css'
 import Follower from './Follower'
-
 
 
 const Comparison = (props) => (
@@ -36,7 +36,6 @@ const Comparison = (props) => (
     
   </div>
 )
-
 
 
 export default Comparison
