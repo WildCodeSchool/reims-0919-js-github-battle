@@ -5,8 +5,9 @@ import './getProfile.css'
 import WeaponLogo from './WeaponLogo'
 
 function GetProfile2({
-  username, avatar_url, public_repos, location, userLanguage,
-  firstAvatar_Url, firstUsername, firstUserLocation, firstUserLanguage, firstUserRepos,
+  username, avatar_url, public_repos, location, userLanguage, followers, public_gists,
+  firstAvatar_Url, firstUsername, firstUserLocation, firstUserLanguage,
+  firstUserRepos, firstUserFollowers, firstUserPublic_Gists,
 }) {
   return (
     <div className="card">
@@ -45,11 +46,15 @@ function GetProfile2({
             firstUserLocation,
             firstUserLanguage,
             firstUserRepos,
+            firstUserPublic_Gists,
+            firstUserFollowers,
             secondAvatar_Url: avatar_url,
             secondUsername: username,
             secondUserLocation: location,
             secondUserLanguage: userLanguage,
             secondUserRepos: public_repos,
+            secondUserPublic_Gists: public_gists,
+            secondUserFollowers: followers,
           },
         }}
         >

@@ -21,8 +21,16 @@ class WelcomePage extends Component {
       avatar_url: null,
       public_repos: null,
       userLanguage: null,
+      followers: null,
+      public_gists: null,
       isCardIsVisible: false,
     }
+    this.cardAppear = this.cardAppear.bind(this)
+  }
+
+  componentDidMount() {
+    this.getUser()
+    this.getUserLanguage()
   }
 
   getUser(username) {
@@ -45,6 +53,8 @@ class WelcomePage extends Component {
       avatar_url: user.avatar_url,
       location: user.location,
       public_repos: user.public_repos,
+      followers: user.followers,
+      public_gists: user.public_gists,
       userLanguage: preferLanguage,
     })
     this.cardAppear()
@@ -59,6 +69,8 @@ class WelcomePage extends Component {
       avatar_url: user.avatar_url,
       location: user.location,
       public_repos: user.public_repos,
+      followers: user.followers,
+      public_gists: user.public_gists,
       userLanguage: preferLanguage,
     })
     this.cardAppear()
@@ -83,6 +95,8 @@ class WelcomePage extends Component {
               avatar_url={this.state.avatar_url}
               public_repos={this.state.public_repos}
               location={this.state.location}
+              followers={this.state.followers}
+              public_gists={this.state.public_gists}
               userLanguage={this.state.userLanguage}
             />
           </div>
