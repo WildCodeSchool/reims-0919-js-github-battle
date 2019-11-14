@@ -16,6 +16,7 @@ class Comparison extends Component {
     this.state = {
       isResultIsVisible: false,
     }
+    this.resultAppear = this.resultAppear.bind(this)
   }
 
   resultAppear() {

@@ -11,16 +11,15 @@ const useStyles = makeStyles({
 
 
 function LinearDeterminate(props) {
+  const classes = useStyles()
+  const [completed, setCompleted] = React.useState(0)
+
   const follower1 = props.firstUserFollowers
   const follower2 = props.secondUserFollowers
   const followertotal = (follower1 + follower2)
   const followerPercent = (follower1 / followertotal) * 100
   const followerDecimal = Math.round(followerPercent * 1) / 1
   const followerSecondUser = Math.round((100 - followerPercent) * 1) / 1
-
-
-  const classes = useStyles()
-  const [completed, setCompleted] = React.useState(0)
 
   React.useEffect(() => {
     function progress() {

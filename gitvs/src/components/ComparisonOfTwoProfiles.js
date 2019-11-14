@@ -1,9 +1,11 @@
 /* eslint-disable react/destructuring-assignment */
 
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Comparison from './Comparison'
 import DisplayChosenProfile1 from './DisplayChosenProfile1'
 import DisplayChosenProfile2 from './DisplayChosenProfile2'
+
 
 function ComparisonOfTwoProfiles(props) {
   return (
@@ -32,6 +34,7 @@ function ComparisonOfTwoProfiles(props) {
           secondUserLanguage={props.location.state.secondUserLanguage}
         />
       </div>
+      <button type="button"><Link to="/home">New Fight</Link></button>
     </div>
   )
 }

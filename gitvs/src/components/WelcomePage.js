@@ -25,6 +25,12 @@ class WelcomePage extends Component {
       public_gists: null,
       isCardIsVisible: false,
     }
+    this.cardAppear = this.cardAppear.bind(this)
+  }
+
+  componentDidMount() {
+    this.getUser()
+    this.getUserLanguage()
   }
 
   getUser(username) {
