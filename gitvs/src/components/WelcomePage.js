@@ -28,14 +28,12 @@ class WelcomePage extends Component {
   getUser(username) {
     return fetch(`https://api.github.com/users/${username}`)
       .then(response => response.json())
-      .then(response => response)
   }
 
   getUserLanguage(username) {
     return fetch(`https://api.github.com/users/${username}/repos`)
       .then(response => response.json())
       .then(response => filterLanguages(response))
-      .then(response => response)
   }
 
   async handleSubmit(e) {
