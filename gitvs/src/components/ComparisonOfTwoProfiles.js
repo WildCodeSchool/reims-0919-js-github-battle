@@ -13,6 +13,7 @@ function ComparisonOfTwoProfiles(props) {
           firstAvatar_Url={props.location.state.firstAvatar_Url}
           firstUsername={props.location.state.firstUsername}
           firstUserLocation={props.location.state.firstUserLocation}
+          firstUserLanguage={props.location.state.firstUserLanguage}
         />
         <Comparison
           firstAvatar_Url={props.location.state.firstAvatar_Url}
@@ -24,6 +25,7 @@ function ComparisonOfTwoProfiles(props) {
           secondAvatar_Url={props.location.state.secondAvatar_Url}
           secondUsername={props.location.state.secondUsername}
           secondUserLocation={props.location.state.secondUserLocation}
+          secondUserLanguage={props.location.state.secondUserLanguage}
         />
       </div>
     </div>

@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 import './getProfile.css'
 import WeaponLogo from './WeaponLogo'
 
+
 function GetProfile({
-  username, avatar_url, public_repos, location, weapons,
+  username, avatar_url, public_repos, location, userLanguage,
 }) {
   return (
     <div className="card">
@@ -30,10 +31,10 @@ function GetProfile({
         <p className="weapons">
                     Favorite Weapons:
           {' '}
-          {weapons}
+          {userLanguage}
         </p>
         <br />
-        <WeaponLogo urlCheck={weapons} />
+        <WeaponLogo userLanguage={userLanguage} />
       </section>
       <button type="button">
         <Link to={{
@@ -42,6 +43,7 @@ function GetProfile({
             avatar_url,
             username,
             location,
+            userLanguage,
             public_repos,
           },
         }}
