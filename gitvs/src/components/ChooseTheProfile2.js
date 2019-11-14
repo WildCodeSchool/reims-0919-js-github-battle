@@ -28,14 +28,12 @@ class ChooseTheProfile2 extends Component {
   getUser(username) {
     return fetch(`https://api.github.com/users/${username}`)
       .then(response => response.json())
-      .then(response => response)
   }
 
   getUserLanguage(username) {
     return fetch(`https://api.github.com/users/${username}/repos`)
       .then(response => response.json())
       .then(response => filterLanguages(response))
-      .then(response => response)
   }
 
   cardAppear() {
