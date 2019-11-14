@@ -47,7 +47,7 @@ function LinearDeterminate(props) {
       })
     }
 
-    const timer = setInterval(progress, 200)
+    const timer = setInterval(progress, 100)
     return () => {
       clearInterval(timer)
     }

@@ -54,13 +54,11 @@ function LinearDeterminate(props) {
 %
           </p>
         </div>
-
-        <LinearProgress id="progressBar" variant="determinate" value={completed} />
-
+        <div>
+          <LinearProgress id="progressBar" variant="determinate" value={completed} />
+        </div>
       </div>
       <br />
-
-
     </div>
   )
 }
