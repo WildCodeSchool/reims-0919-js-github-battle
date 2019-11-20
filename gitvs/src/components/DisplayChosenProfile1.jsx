@@ -31,7 +31,7 @@ function DisplayChosenProfile1({
           {firstUserLanguage}
         </h3>
         <br />
-        <WeaponLogo userLanguage={firstUserLanguage} />
+        <WeaponLogo className='logo' userLanguage={firstUserLanguage} />
       </section>
       <div className="avatarBox">
         <img className="avatar" src={firstAvatar_Url} alt={firstUsername} />

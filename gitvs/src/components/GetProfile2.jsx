@@ -5,8 +5,9 @@ import './getProfile.css'
 import WeaponLogo from './WeaponLogo'
 
 function GetProfile2({
-  username, avatar_url, public_repos, location, userLanguage,
-  firstAvatar_Url, firstUsername, firstUserLocation, firstUserLanguage, firstUserRepos,
+  username, avatar_url, public_repos, location, userLanguage, followers, public_gists,
+  firstAvatar_Url, firstUsername, firstUserLocation, firstUserLanguage,
+  firstUserRepos, firstUserFollowers, firstUserPublic_Gists,
 }) {
   return (
     <div className="choiceCard2">
@@ -21,20 +22,20 @@ function GetProfile2({
           {location}
           <br />
         </p>
-        <p className="repo">
+        {/* <p className="repo">
                     Public Repositories:
           {' '}
           <br />
           {public_repos}
           <br />
-        </p>
+        </p> */}
         <p className="weapons">
                     Favorite Weapons:
           {' '}
           {userLanguage}
         </p>
         <br />
-        <WeaponLogo userLanguage={userLanguage} />
+        <WeaponLogo className='logo' userLanguage={userLanguage} />
       </section>
       <button type="button">
         <Link to={{
@@ -45,11 +46,15 @@ function GetProfile2({
             firstUserLocation,
             firstUserLanguage,
             firstUserRepos,
+            firstUserPublic_Gists,
+            firstUserFollowers,
             secondAvatar_Url: avatar_url,
             secondUsername: username,
             secondUserLocation: location,
             secondUserLanguage: userLanguage,
             secondUserRepos: public_repos,
+            secondUserPublic_Gists: public_gists,
+            secondUserFollowers: followers,
           },
         }}
         >

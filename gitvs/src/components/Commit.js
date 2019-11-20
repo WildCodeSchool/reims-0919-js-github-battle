@@ -12,16 +12,15 @@ const useStyles = makeStyles({
 })
 
 function LinearDeterminate(props) {
+  const classes = useStyles()
+  const [completed, setCompleted] = React.useState(0)
+
   const commit1 = props.firstUserRepos
   const commit2 = props.secondUserRepos
   const commitotal = (commit1 + commit2)
   const commitPercent = (commit1 / commitotal) * 100
   const percentDecimal = Math.round(commitPercent * 1) / 1
   const percentSecondUser = Math.round((100 - commitPercent) * 1) / 1
-
-
-  const classes = useStyles()
-  const [completed, setCompleted] = React.useState(0)
 
   React.useEffect(() => {
     function progress() {
@@ -34,7 +33,7 @@ function LinearDeterminate(props) {
       })
     }
 
-    const timer = setInterval(progress, 200)
+    const timer = setInterval(progress, 100)
     return () => {
       clearInterval(timer)
     }
@@ -52,7 +51,6 @@ function LinearDeterminate(props) {
         </p>
         <br />
       </div>
-
     </div>
   )
 }

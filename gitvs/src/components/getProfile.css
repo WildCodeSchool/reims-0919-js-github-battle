@@ -4,7 +4,10 @@
     margin: 0%;
     padding: 0%;
 }
-
+.logo {
+    width: 100px;
+    height: 100%;
+}
 .card1 {
     align-items: center;
     box-shadow: 0 5px 8px 0 #3B4BFF;
@@ -12,6 +15,8 @@
     border-radius: 5px;
     width: 100%;
     height: auto;
+    padding : 0 100px 0 100px;
+    justify-content: flex-start;
     /* background-image: url('https://zupimages.net/up/19/43/1e55.png');
     background-size: 100%;
     background-position: right;
@@ -43,7 +48,8 @@
     display: flex;
     flex-direction: row;
     background: linear-gradient(to right, #B31105,#FF0F00), url('https://zupimages.net/up/19/43/1e55.png');
-    align-items: center;
+    /* align-items: center; */
+    padding : 0 100px 0 100px;
 }
 .card2 h1{
     color: black;
@@ -73,20 +79,21 @@
     color: red; 
 }
 .avatar{
-    width: 30%;
+    width: 100px;
     height: auto;
     border-radius: 0px 40px 0px 40px;
     border: 5px inset black;
+    
 }
 
 
 
 .location{
     padding-bottom: 5%;
-    font-size: 70%;
+    font-size: 110%;
 }
 .weapons{
-    font-size: 70%;
+    font-size: 100%;
 }
 
 .userinfo1{
@@ -103,6 +110,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 
 .choiceCard2{
@@ -152,6 +160,13 @@
     margin: 0%;
     padding: 0%;
 }
+.avatar{
+    width: 100px;
+    height: auto;
+    border-radius: 0px 40px 0px 40px;
+    border: 5px inset black;
+    
+}
 
 .userinfo{
     padding: 5%;
@@ -160,20 +175,23 @@
     font-size: 3vh;
 }
 
-.card {
-    margin: auto;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.card1 {
+    align-items: center;
+    box-shadow: 0 5px 8px 0 #3B4BFF;
     transition: 0.3s;
     border-radius: 5px;
-    width: 40%;
-    height: 100%;
-    background-image: url('https://zupimages.net/up/19/43/1e55.png');
+    width: 100%;
+    height: auto;
+    /* padding : 0 100px 0 100px; */
+    justify-content: flex-start;
+    /* background-image: url('https://zupimages.net/up/19/43/1e55.png');
     background-size: 100%;
     background-position: right;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    max-width: auto;
-    max-height: 100%;
+    -webkit-background-size: cover; */
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to left, #0C1AB3,#3B4BFF);
 }
 
 .card:hover {
@@ -199,6 +217,10 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 2vh;
     padding-bottom: 5%;
+}
+.logo {
+    width: 30px;
+    height: 100%;
 }
 
 .userinfo{

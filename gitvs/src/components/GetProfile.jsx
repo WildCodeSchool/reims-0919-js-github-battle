@@ -6,7 +6,7 @@ import WeaponLogo from './WeaponLogo'
 
 
 function GetProfile({
-  username, avatar_url, public_repos, location, userLanguage,
+  username, avatar_url, public_repos, location, followers, public_gists, userLanguage,
 }) {
   return (
     <div className="choiceCard1">
@@ -21,20 +21,20 @@ function GetProfile({
           {location}
           <br />
         </p>
-        <p className="repo">
+        {/* <p className="repo">
                     Public Repositories:
           {' '}
           <br />
           {public_repos}
           <br />
-        </p>
+        </p> */}
         <p className="weapons">
                     Favorite Weapons:
           {' '}
           {userLanguage}
         </p>
         <br />
-        <WeaponLogo userLanguage={userLanguage} />
+        <WeaponLogo className='logo' userLanguage={userLanguage} />
       </section>
       <button type="button">
         <Link to={{
@@ -45,6 +45,8 @@ function GetProfile({
             location,
             userLanguage,
             public_repos,
+            public_gists,
+            followers,
           },
         }}
         >

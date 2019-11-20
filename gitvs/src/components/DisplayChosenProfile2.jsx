@@ -34,7 +34,7 @@ function DisplayChosenProfile2({
           {secondUserLanguage}
         </p>
         <br />
-        <WeaponLogo userLanguage={secondUserLanguage} />
+        <WeaponLogo className='logo' userLanguage={secondUserLanguage} />
       </section>
     </div>
   )

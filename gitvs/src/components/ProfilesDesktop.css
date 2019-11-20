@@ -68,7 +68,8 @@
         display: block;
         border:3px inset rgb(38, 28, 182);
         margin: 10px;
-        border-radius: 10px
+        border-radius: 10px;
+        background-color: rgba(0,0,0,0.5);
     }
 
     .buttonPhone {
