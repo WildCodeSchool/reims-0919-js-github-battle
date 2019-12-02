@@ -10,6 +10,7 @@ function Main() {
       <Route exact path="/" component={WelcomePage} />
       <Route path="/chooseprofile2" component={ChooseTheProfile2} />
       <Route path="/comparison" component={ComparisonOfTwoProfiles} />
+      <Route path="/home" component={WelcomePage} />
     </Switch>
   )
 }

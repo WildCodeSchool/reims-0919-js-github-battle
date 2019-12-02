@@ -5,7 +5,14 @@
     }
 
     #WelcomePage {
-        margin: 20% auto 0 auto;
+        margin: 10% auto 0 auto;
+        
+    }
+    .title h1{
+        color: white;
+        /* text-shadow:1px 5px 1px black; */
+        text-shadow: 4px 4px 4px black, 0 0 1em black, 0 0 0.2em black;
+        font-family: 'Amarante';
     }
     
     #PagePage {
@@ -33,9 +40,11 @@
     }
 
     #ProfileOn {
-        display: block;
+        display: flex;
         margin: auto;
         margin-top: 0;
+        align-items: center;
+        justify-content: center;
     }
 
     #ProfileOff {
@@ -59,7 +68,8 @@
         display: block;
         border:3px inset rgb(38, 28, 182);
         margin: 10px;
-        border-radius: 10px
+        border-radius: 10px;
+        background-color: rgba(0,0,0,0.5);
     }
 
     .buttonPhone {

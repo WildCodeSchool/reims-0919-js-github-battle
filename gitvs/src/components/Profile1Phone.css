@@ -1,7 +1,12 @@
+
+img.avatar-result{
+    width: 30%
+}
+
 @media screen and (max-width: 800px) {
 
     .avatar {
-        width: 60%;
+        width: 40%;
         margin: 10px 0px 10px 0px;
     }
 
@@ -17,7 +22,7 @@
     }
 
     #WelcomePage {
-        margin-top: 50%;
+        margin-top: 5%;
     }
 
     #Profile1 {
@@ -33,16 +38,16 @@
         display: none;
     }
 
-    #comparison {
+    /* #comparison {
         display: none;
-    }
+    } */
 
     .buttonReadyDesktop {
         display: none;
     }
 
     .avatar-result {
-        width: 80%;
+        width: 20%;
         border-radius: 50%;
         margin: 10px;
     }
@@ -65,9 +70,7 @@
         margin: 10px;
     }
 
-    h1 {
-        color: red;
-    }
+    
 
     .buttonDesktop {
         display: none;
@@ -77,5 +80,25 @@
         display: flex;
         justify-content: center;
     }
+    #ProfileOn {
+        display: flex;
+        margin: auto;
+        margin-top: 0;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
 
+    #ProfileOff {
+        display: none;
+        margin: auto;
+        margin-top: 0;
+    }
+
+    .title{
+        color: white;
+        /* text-shadow:1px 5px 1px black; */
+        text-shadow: 4px 4px 4px black, 0 0 1em black, 0 0 0.2em black;
+        font-family: 'Amarante';
+}
 }

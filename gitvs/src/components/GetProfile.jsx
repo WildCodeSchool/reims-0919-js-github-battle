@@ -9,8 +9,8 @@ function GetProfile({
   username, avatar_url, public_repos, location, followers, public_gists, userLanguage,
 }) {
   return (
-    <div className="card">
-      <h1 className="githubNickname">{username}</h1>
+    <div className="choiceCard1">
+      <h1 className="githubNickname1">{username}</h1>
       <div className="avatarBox">
         <img className="avatar" src={avatar_url} alt={username} />
       </div>
@@ -21,20 +21,20 @@ function GetProfile({
           {location}
           <br />
         </p>
-        <p className="repo">
+        {/* <p className="repo">
                     Public Repositories:
           {' '}
           <br />
           {public_repos}
           <br />
-        </p>
+        </p> */}
         <p className="weapons">
                     Favorite Weapons:
           {' '}
           {userLanguage}
         </p>
         <br />
-        <WeaponLogo userLanguage={userLanguage} />
+        <WeaponLogo className='logo' userLanguage={userLanguage} />
       </section>
       <button type="button">
         <Link to={{
@@ -50,7 +50,7 @@ function GetProfile({
           },
         }}
         >
-          Go !
+          Lock profile !
         </Link>
       </button>
     </div>

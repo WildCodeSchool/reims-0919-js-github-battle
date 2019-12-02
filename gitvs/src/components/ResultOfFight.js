@@ -1,6 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import LinearProgress from '@material-ui/core/LinearProgress'
+import './progressBar.css'
 
 const useStyles = makeStyles({
   root: {
@@ -31,8 +32,8 @@ function LinearDeterminate(props) {
   const publicGistsDecimal = Math.round(publicGistsPercent * 1) / 1
   const publicGistsSecondUser = Math.round((100 - publicGistsPercent) * 1) / 1
 
-  const resultUser1 = (percentDecimal + followerDecimal + publicGistsDecimal) / 3
-  const resultUser2 = (percentSecondUser + followerSecondUser + publicGistsSecondUser) / 3
+  const resultUser1 = Math.round(((percentDecimal + followerDecimal + publicGistsDecimal) / 3) / 1)
+  const resultUser2 = Math.round(((percentSecondUser + followerSecondUser + publicGistsSecondUser) / 3) / 1 )
   const classes = useStyles()
   const [completed, setCompleted] = React.useState(0)
 
@@ -55,24 +56,38 @@ function LinearDeterminate(props) {
 
   return (
     <div className={classes.root}>
-      <div>
-        <div className="commitBar">
-          <p className="firstUserResult">
-            {resultUser1}
-%
-          </p>
-          <p>/</p>
-          <p className="secondUserResult">
-            {resultUser2}
-%
-          </p>
-        </div>
-        <LinearProgress className="commitBarResult" id="progressBar" variant="determinate" value={completed} />
-      </div>
+      
+    <div className="percentWithBar">
+      <p className="firstUserResult">
+      {resultUser1}%
+      </p>
+      <LinearProgress id="progressBar" variant="determinate" value={completed} />
+      <p className="secondUserResult">
+      {resultUser2}%
+      </p>
       <br />
-
-
     </div>
+
+  </div>
+//     <div className={classes.root}>
+//       <div>
+//         <div className="commitBar">
+//           <p className="firstUserResult">
+//             {resultUser1}
+// %
+//           </p>
+//           <p>/</p>
+//           <p className="secondUserResult">
+//             {resultUser2}
+// %
+//           </p>
+//         </div>
+//         <LinearProgress className="commitBarResult" id="progressBar" variant="determinate" value={completed} />
+//       </div>
+//       <br />
+
+
+//     </div>
   )
 }
 

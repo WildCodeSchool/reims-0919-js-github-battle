@@ -16,6 +16,7 @@ class Comparison extends Component {
     this.state = {
       isResultIsVisible: false,
     }
+    this.resultAppear = this.resultAppear.bind(this)
   }
 
   resultAppear() {
@@ -30,30 +31,27 @@ class Comparison extends Component {
     return (
       <div id="comparison">
         <div className="VS-phone">
-          <figure>
-            <img className="avatar-result" src={this.props.firstAvatar_Url} alt="avatar user one" />
-          </figure>
-          <h2>VS</h2>
-          <figure>
-            <img className="avatar-result" src={this.props.secondAvatar_Url} alt="avatar user two" />
-          </figure>
         </div>
         <div className="boxProgressBar">
-          <div>
+          <div className='threeBarOfFight'>
+            <p className='titleOfStat'>Public Repo</p>
             <Commit
               firstUserRepos={this.props.firstUserRepos}
               secondUserRepos={this.props.secondUserRepos}
             />
+            <p className='titleOfStat'>Followers</p>
             <Follower
               firstUserFollowers={this.props.firstUserFollowers}
               secondUserFollowers={this.props.secondUserFollowers}
             />
+            <p className='titleOfStat'>Public Gists</p>
             <PublicGists
               firstUserPublic_Gists={this.props.firstUserPublic_Gists}
               secondUserPublic_Gists={this.props.secondUserPublic_Gists}
             />
             {this.state.isResultIsVisible
               ? (
+                  // <p>Results Of Fight</p>
                 <ResultOfFight
                   firstUserRepos={this.props.firstUserRepos}
                   secondUserRepos={this.props.secondUserRepos}
@@ -67,7 +65,7 @@ class Comparison extends Component {
               : null}
           </div>
         </div>
-        <button type="button" value="Masquer" onClick={e => this.buttonSubmit(e)}>Résults !</button>
+        <button type="button" value="Masquer" onClick={e => this.buttonSubmit(e)}>Résults of fight !</button>
       </div>
     )
   }

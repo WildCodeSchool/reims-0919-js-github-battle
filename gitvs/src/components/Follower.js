@@ -41,23 +41,16 @@ function LinearDeterminate(props) {
 
   return (
     <div className={classes.root}>
-      <div>
-        <div className="commitBar">
-          <p className="firstUserResult">
-            {followerDecimal}
-%
-          </p>
-          <p>/</p>
-          <p className="secondUserResult">
-            {followerSecondUser}
-%
-          </p>
-        </div>
+      <div className="percentWithBar">
+        <p className="firstUserResult">
+          {followerDecimal}%
+        </p>
         <LinearProgress id="progressBar" variant="determinate" value={completed} />
+        <p className="secondUserResult">
+          {followerSecondUser}%
+        </p>
+        <br />
       </div>
-      <br />
-
-
     </div>
   )
 }

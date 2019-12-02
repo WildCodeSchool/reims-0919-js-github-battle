@@ -1,15 +1,15 @@
 #progressBar .MuiLinearProgress-barColorPrimary{
     
     background: linear-gradient(to right,#1759FF, #0B2C80);
-    width: 100% !important;
+    /* width: 100% !important; */
     
   }
   .MuiLinearProgress-colorPrimary{
     background: linear-gradient(to right,#80061D,#E60B33 )!important;
-    padding : 5px;
+    
     box-shadow: 5px 5px 5px black;
     border: 5px grey outset ;
-    width: 100% !important;
+    width: 250px !important;
   }
 .commitBarResult{
     padding: 15px;
@@ -27,10 +27,68 @@
       justify-content: center;
   }
 
-
+.threeBarOfFight{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
 .firstUserResult{
       color: blue;
+      /* margin: 5%; */
+      text-shadow: 2px 2px 2px white, 0 0 2em white, 0 0 0.4em white;
   }
   .secondUserResult{
       color: red;
+      /* margin: 5%; */
+      text-shadow: 2px 2px 2px white, 0 0 2em white, 0 0 0.4em white;
+  }
+
+  #progressBar{
+    padding: 8px;
+    margin: 2%;
+    
+  }
+  #progressBarOfResult{
+    padding: 13px;
+  }
+  /* .boxProgressBar{
+    margin: 3%;
+  } */
+  .percentWithBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    
+  }
+  #comparison h1{
+    color: white;
+        /* text-shadow:1px 5px 1px black; */
+        text-shadow: 4px 4px 4px black, 0 0 1em black, 0 0 0.2em black;
+        font-family: 'Amarante';
+  }
+.boxProgressBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.titleOfStat{
+  color: white;
+        /* text-shadow:1px 5px 1px black; */
+        text-shadow: 6px 6px 6px black, 0 0 2em black, 0 0 0.4em black;
+        font-family: 'Amarante';
+}
+
+  @media screen and (max-width: 300px){
+    .MuiLinearProgress-colorPrimary{
+      background: linear-gradient(to right,#80061D,#E60B33 )!important;
+      
+      box-shadow: 5px 5px 5px black;
+      border: 5px grey outset ;
+      width: 125px !important;
+    }
   }
