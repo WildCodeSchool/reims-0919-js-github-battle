@@ -2,6 +2,11 @@
   text-align: center;
   padding: 0;
   margin: 0;
+  background-image: url('http://karateclubcorbas.com/kcc_wp/wp-content/uploads/2015/02/dojo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .App-logo {

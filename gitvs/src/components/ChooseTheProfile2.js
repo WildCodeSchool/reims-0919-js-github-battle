@@ -36,14 +36,12 @@ class ChooseTheProfile2 extends Component {
   getUser(username) {
     return fetch(`https://api.github.com/users/${username}`)
       .then(response => response.json())
-      .then(response => response)
   }
 
   getUserLanguage(username) {
     return fetch(`https://api.github.com/users/${username}/repos`)
       .then(response => response.json())
       .then(response => filterLanguages(response))
-      .then(response => response)
   }
 
   cardAppear() {
@@ -86,7 +84,9 @@ class ChooseTheProfile2 extends Component {
     return (
       <div>
         <div id="WelcomePage">
-          <h1>Choose an another profile</h1>
+          <div className='title'>
+            <h1>Choose another profile</h1>
+          </div>
           <form onSubmit={e => this.handleSubmit(e)}>
             <input ref="username" type="text" placeholder="username" />
             <button type="button" onClick={e => this.buttonSubmit(e)}>Search</button>

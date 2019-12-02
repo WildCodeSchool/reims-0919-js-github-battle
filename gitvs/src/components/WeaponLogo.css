@@ -9,13 +9,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10%;
-    width: 25%;
-    margin: auto;
+    height: auto;
+    width: auto;
+    /* margin: auto; */
     overflow: hidden;
-    padding-bottom: 15%;
+    padding-bottom: 1%;
 }
 .logo{
     height: 60%;
     width: 60%;
+    max-height: 10px;
+    max-width: 10px;
+    min-width: 100px;
+    min-height: 100px;
 }
