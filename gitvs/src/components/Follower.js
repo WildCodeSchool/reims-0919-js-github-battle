@@ -21,6 +21,7 @@ function LinearDeterminate(props) {
   const followerDecimal = Math.round(followerPercent * 1) / 1
   const followerSecondUser = Math.round((100 - followerPercent) * 1) / 1
 
+
   React.useEffect(() => {
     function progress() {
       setCompleted((oldCompleted) => {
