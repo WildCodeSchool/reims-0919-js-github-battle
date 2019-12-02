@@ -31,13 +31,6 @@ class Comparison extends Component {
     return (
       <div id="comparison">
         <div className="VS-phone">
-          {/* <figure>
-            <img className="avatar-result" src={this.props.firstAvatar_Url} alt="avatar user one" />
-          </figure>
-          <h2></h2>
-          <figure>
-            <img className="avatar-result" src={this.props.secondAvatar_Url} alt="avatar user two" />
-          </figure> */}
         </div>
         <div className="boxProgressBar">
           <div className='threeBarOfFight'>
